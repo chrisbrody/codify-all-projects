@@ -1,0 +1,55 @@
+/*
+  1) CSS stands for Cascading Style Sheets
+  2) Cascade refers to how CSS applies one style on top of another
+  3) We create selectors in CSS to choose HTML elements we want to style
+  4) Once we have a selector created we can add property and value pairs to the selector to change how the elements chosen look.
+*/
+
+/*CSS PROPERTIES*/
+/*background-color*/ /*border*/ /*color*/ /*display*/ /*height*/ /*float*/ /*font-size*/ /*margin*/ /*padding*/ /*text-decoration*/ /*text-transform*/ /*width*/
+body {
+    margin: 0;
+}
+
+.wrapper {
+  background-color: tomato;
+  border: 20px solid black;
+  color: white;
+  padding: 50px;
+  margin: 50px;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 85px;
+  text-transform: uppercase;
+}
+
+a {
+  color: black;
+  text-decoration: underline;
+}
+
+.image2 {
+  width: 50px;
+  height: 50px;
+}
+
+#about, .main, .sidebar {
+  height: 300px;
+}
+
+.main, .sidebar {
+  float: left;
+}
+
+.main {
+  width: 70%;
+  background: white;
+  color: black;
+}
+
+.sidebar {
+  width: 30%;
+  background: grey;
+}
