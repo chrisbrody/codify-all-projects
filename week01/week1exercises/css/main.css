@@ -1,0 +1,22 @@
+.nav {
+  background-color: black;
+  margin: 0;
+  padding:15px;
+}
+.nav li {
+  background-color: grey;
+  display: inline-block;
+  padding:10px;
+}
+.wrapper {
+  text-align: center;
+}
+.box {
+  float: left;
+  width: 50%;
+}
+.box p {
+  background-color: tomato;
+  border: 5px solid black;
+  padding: 25px;
+}
