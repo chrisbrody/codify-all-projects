@@ -1,0 +1,39 @@
+body {
+    text-align: center;
+}
+
+.box {
+    display: inline-block;
+    height: 200px;
+    width: 45%;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+/*This media query goes from small TO big - saying that the MAX WIDTH where this set of styles will apply is @ 600px (ie: the width of the screen can be AT MOST 600px for these styles to take effect)*/
+@media (max-width: 600px) {
+    .blue, .green {
+        display: none;
+    }
+}
+
+/*This media query goes from big TO small - saying that the MIN WIDTH where this set of styles will apply is @ 1000px (ie: the width of the screen has to be AT LEAST 1000px for these styles to take effect)*/
+@media (min-width: 1000px) {
+    .box {
+        width: 100%;
+    }
+}
