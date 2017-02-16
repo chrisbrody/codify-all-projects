@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Character Set -->
+		<meta charset="utf-8">
+    <!-- Lets Media Queries be used -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Creator of the Website -->
+		<meta name="author" content="Chris @ Codify Academy">
+		<!-- Description of the Website -->
+		<meta name="description" content="jQuery Examples">
+    <!-- SEO Keywords of the Website -->
+		<meta name="keywords" content="jQuery, jQuery Examples">
+
+    <!-- title -->
+    <title>jQuery Examples</title>
+
+    <!-- Favorite icon -->
+		<link rel="shortcut icon" href="favicon.ico">
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom css -->
+    <link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<h1>Introduction to jQuery</h1>
+				<div class="col-sm-12">
+					<p>These examples should provide students a basic understanding of including and using jQuery in projects. <br> They should also gain insight into the power of jQuery.</p>
+				</div>
+				<div class="clearfix"></div>
+			</header> <!-- /header -->
+			<section id="download">
+				<h2>Download and Use jQuery</h2>
+				<div class="col-sm-12">
+					<h3>Direct Download</h3>
+					<p>Download from <a href="http://jquery.com/download/" target="_blank">jquery.com/download</a>, copy this file into your JS folder and add the script below to the bottom of your <code>body</code> tag.</p>
+					<code>&lt;script src="js/jquery-3.2.1.min.js"&gt;&lt;/script&gt;</code>
+					<h3>Using jQuery CDN ( content delivery network )</h3>
+					<p>The <a href="http://jquery.com/download/" target="_blank">jQuery CDN</a> is something that should be used when a site is going to be loaded onto the server i.e. going live, this will allow for a faster server call, rather than having to search through your files for jQuery you can connect directly by including the script below at the bottom of your code above the closing<code>&lt;/body&gt;</code> tag</p>
+					<code>&lt;script src="https://code.jquery.com/jquery-3.2.1.min.js"&gt;&lt;/script&gt;</code>
+					<h3>Using Google's Hosted jQuery CDN Library</h3>
+					<p>This is the same as the CDN above, only using <a href="https://developers.google.com/speed/libraries/" target="_blank">Google's Hosted Library</a> - this is the third way you can include jQuery and should be used in the live version if not using the jQuery hosted CDN.</p>
+					<code>&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"&gt;&lt;/script&gt;</code>
+				</div>
+				<div class="clearfix"></div>
+			</section> <!-- /download -->
+
+			<section id="selectors">
+
+				<h2>Using jQuery to select HTML elements</h2>
+				<div class="col-sm-12">
+					<div id="hideAllSelectors">
+						<h3>Select all <code>p</code> tags &amp; hide them</h3>
+						<code>$('p').hide();</code>
+					</div>
+					<div id="hideId">
+						<h3>Select the <code>test</code> id and hide the element with this ID</h3>
+						<code>$('#test').hide();</code>
+					</div>
+					<div id="hideClass">
+						<h3>Select the <code>test</code> class and hide any elements with this class</h3>
+						<code>$('.test').hide();</code>
+					</div>
+					<div>
+						<br>
+						<p>jQuery allows you to select using CSS selectors - <a href="http://www.w3schools.com/jquery/jquery_selectors.asp" target="_blank">here is a list</a> of a few more you can share with the students</p>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</section> <!-- /selectors -->
+
+			<section id="events">
+				<h2>Using simple jQuery events</h2>
+				<div class="col-sm-12">
+					<div id="mouseEnter" class="col-sm-6">
+						<h3>Mouse Enter Event</h3>
+						<div class="alert alert-success">Put your mouse inside me and see some jQuery fun Happen</div>
+					</div>
+					<div id="mouseLeave" class="col-sm-6">
+						<h3>Mouse Leave Event</h3>
+						<div class="alert alert-info">Put your mouse inside, then out to see the mouse leave event trigger.</div>
+					</div>
+					<div class="clearfix"></div>
+					<div id="mouseClick" class="col-sm-6">
+						<h3>Mouse Click Event</h3>
+						<div class="alert alert-warning">Click Me to see More!</div>
+					</div>
+					<div id="mouseHover" class="col-sm-6">
+						<h3>Mouse Hover Event</h3>
+						<div class="alert alert-danger">Hover Here to see More!</div>
+					</div>
+				</div>
+				<p>jQuery allows you add events to any HTML element - <a href="https://www.w3schools.com/jquery/jquery_events.asp" target="_blank">here is a list</a> of a few more events.</p>
+				<div class="clearfix"></div>
+			</section> <!-- /events -->
+
+			<section id="hideShowEvents">
+				<h2>Hide &amp; Show elements</h2>
+				<div class="col-sm-12">
+					<div id="hideTags">
+						<p>This Paragraph Wont Hide</p>
+						<h4 class="element">If you click on me, I will disappear.</h4>
+						<p class="element">Click me away!</p>
+						<h6 class="element">Click me too!</h6>
+					</div>
+					<div id="hideShow">
+						<p>If you click on the "Hide" button, I will disappear.</p>
+						<button id="hide" class="btn btn-default">Hide</button>
+						<button id="show" class="btn btn-default">Show</button>
+					</div>
+					<div id="toggleHideShow">
+						<h4>This Tag will be Toggles between Hidden &amp; Shown when you click the button below</h4>
+						<button class="btn btn-default">Toggle Me</button>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</section> <!-- /hideShowEvents -->
+
+			<section id="fade">
+				<h2>jQuery Fade Functions</h2>
+				<div class="col-sm-12">
+					<div id="fadeInEvent">
+						<h3>Function to fadeIn() on click</h3>
+						<button class="btn btn-default">Click to fadeIn boxes</button>
+						<br><br>
+						<div id="div1"></div>
+						<br>
+						<div id="div2"></div>
+						<br>
+						<div id="div3"></div>
+					</div>
+					<div id="fadeOutEvent">
+						<h3>Function to fadeOut() on click</h3>
+						<button class="btn btn-default">Click to fadeOut boxes</button>
+						<br><br>
+						<div id="div4"></div>
+						<br>
+						<div id="div5"></div>
+						<br>
+						<div id="div6"></div>
+					</div>
+					<div id="fadeToggleEvent">
+						<h3>Function to fadeToggle() on click</h3>
+						<button class="btn btn-default">Click to fadeToggle boxes</button>
+						<br></br>
+						<ul>
+							<li id="li1"></li>
+							<li id="li2"></li>
+							<li id="li3"></li>
+						</ul>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</section> <!-- /fade -->
+
+			<section id="slide">
+				<h2>jQuery Slide Functions</h2>
+				<div class="col-sm-12">
+					<div id="slideUpEvent">
+						<div class="flip">Click to slide up panel</div>
+						<div class="panel">Slide'n Up!</div>
+					</div>
+					<br>
+					<div id="slideDownEvent">
+						<div class="flip">Click to slide down panel</div>
+						<div class="panel">Slide'n Down!</div>
+					</div>
+					<br>
+					<div id="slideToggleEvent">
+						<div class="flip">Click to slide the panel down or up</div>
+						<div class="panel">Toggle This Slide!</div>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</section> <!-- /slide -->
+
+			<section id="classToggle">
+				<h2>jQuery Class Functions</h2>
+				<div class="col-sm-12">
+					<div id="addClassEvent">
+						<h1>Heading 1</h1>
+						<h2>Heading 2</h2>
+						<p>This is a paragraph.</p>
+						<p>This is another paragraph.</p>
+						<div>This is some important text!</div><br>
+						<button class="btn btn-default">Add classes to elements</button>
+					</div>
+					<div id="removeClassEvent">
+						<h1 class="blue">Heading 1</h1>
+						<h2 class="blue">Heading 2</h2>
+						<p class="blue">This is a paragraph.</p>
+						<p>This is another paragraph.</p>
+						<div class="important">This is some important text!</div><br>
+						<button class="btn btn-default">Remove classes from elements</button>
+					</div>
+					<div id="toggleClassEvent">
+						<h1>Heading 1</h1>
+						<h2>Heading 2</h2>
+						<p>This is a paragraph.</p>
+						<p>This is another paragraph.</p>
+						<button class="btn btn-default">Toggle Classes</button>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</section> <!-- /classToggle -->
+		</div> <!-- /container -->
+
+		<!-- jQuery -->
+		<script src="js/jquery-3.2.1.min.js"></script>
+		<!-- Bootstrap JavaScript -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- Custom JavaScript -->
+		<script src="js/main.js"></script>
+	</body>
+</html>
