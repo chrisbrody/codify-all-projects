@@ -1,0 +1,24 @@
+<div id="main" class="container">
+	<div class="row text-center">
+		<div class="col-xs-12">
+			<form>
+				<label class="radio-inline">
+					<input type="radio" ng-model="direction" name="direction" checked>Ascending
+				</label>
+				<label class="radio-inline">
+					<input type="radio" ng-model="direction" name="direction" value="reverse">Descending
+				</label>
+			</form>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="container text-center">
+			<div class="col-xs-4" ng-animate="'animate'" ng-repeat="item in comicData | filter: query | orderBy: comicOrder: direction" id="comicContainer">
+				<a href="#/"><img ng-src="img/{{item.image}}.jpg" class="comics"></a>
+				<h2>{{item.name}}</h2>
+				<p>{{item.artist}}</p>
+			</div>
+		</div>
+	</div>
+</div>
