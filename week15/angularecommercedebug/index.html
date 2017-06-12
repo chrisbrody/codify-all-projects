@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Character Set -->
+	<meta charset="utf-8">
+	<!-- Media Queries -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Title -->
+	<title>Angular E-Commerce</title>
+
+	<!-- BOOTSTRAP -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/main.css">
+
+	<!-- ANGULAR -->
+	<script src="angular/angular.min.js"></script>
+	<script src="angular/angular-route.min.js"></script>
+	<!-- APP -->
+	<script src="js/app.js"></script>
+	<!-- SERVICES -->
+	<script src="js/controllers.js"></script>
+</head>
+<body ng-app="dcComics">
+
+	<nav>
+		<div class="container">
+			<div class="row">
+				<h1><span>DC</span> Comics</h1>
+				<ul>
+					<li><a href="#/">Home</a></li>
+					<li><a href="#/">About</a></li>
+					<li><a href="#/">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<section>
+		<div ng-view></div>
+	</section>
+
+</body>
+</html>
