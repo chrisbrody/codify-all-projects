@@ -1,0 +1,43 @@
+<div class="containter">
+	<div class="row">
+		<div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+
+			<div class="flexbox">
+				<div class="flexboxContainer">
+
+					<div class="form-group">
+						<div class="loginInfo">
+							<h1>Login Information</h1>
+							<input ng-model='userName' type="text" placeholder="Username" class="form-control">
+							<br>
+							<input ng-model='userPassword' type="text" placeholder="Password" class="form-control">
+						</div>
+
+						<div class="profileInfo">
+							<h1>Profile Information</h1>
+							<input ng-model='fName' type="text" placeholder="First Name" class="form-control">
+							<br>
+							<input ng-model='lName' type="text" placeholder="Last Name" class="form-control">
+							<br>
+							<label>
+								Gender:
+								<input type="radio" ng-model="gender" value="Male" name="gender"> Male
+								<input type="radio" ng-model="gender" value="Female" name="gender"> Female
+								<br>
+							</label>
+							<input type="number" ng-model='phone' placeholder="Phone Number" class="form-control">
+							<br>
+							<input type="text" ng-model='email' placeholder="Email Address" class="form-control">
+							<br>
+							<textarea rows="5" ng-model='bio' placeholder="Tell us a little about yourself here!" class="form-control"></textarea>
+							<br>
+							<button ng-click='acctReg()' class="btn btn-success">Register Account</button>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>

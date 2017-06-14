@@ -1,0 +1,31 @@
+<!-- This is the templateUrl for the default page. The way the routing is set up, when the index is loaded it automatically defaults to this. The index is always '/' when dealing with file paths, but looking at routing.js, we see that 'when the path is '/' the templateUrl that gets loaded is this one, and the corresponding controller is the 'loginCtrl'', found in the loginController.js file. -->
+<div class="containter">
+	<div class="row">
+		<div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+
+			<div class="flexbox">
+				<div class="flexboxContainer">
+
+					<h1>Codify Academy Login</h1>
+					<!-- ng-model here is a DIRECTIVE. It's a piece of Angular code that goes in the HTML and at the same time links to some pre-defined JS functionality.
+
+					The value associated with ng-model is actually a variable in the defined controller. So, in the 'loginCtrl' (in the loginController.js file) there is a variable declared on the $scope object that is named 'userName' and another one named 'userPassword'. In the controller, you can see that 'userName' and 'userPassword' are defined as ''.
+
+					ng-click is another built-in Angular DIRECTIVE. It's value is bound to a function that is defined in 'loginCtrl'.
+					-->
+					<input ng-model='userName' type="text" placeholder="username" class="form-control">
+					<br>
+					<input ng-model='userPassword' type="password" placeholder="password" class="form-control">
+					<br>
+					<button ng-click='logIn()' class="btn btn-success">Log In</button>
+				  <p>
+						Don't have an account yet?
+						<button ng-click='acctReg()' class="btn btn-link">Sign Up</button>
+					</p>
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>

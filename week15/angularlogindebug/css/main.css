@@ -1,0 +1,19 @@
+/*Login Page*/
+.flexbox {
+  display: flex;
+  height: 100vh;
+}
+
+.flexboxContainer {
+  width: 90%;
+  margin: auto;
+}
+
+.red {
+  color: red;
+}
+
+/*Register Page*/
+.loginInfo, .profileInfo{
+  text-align: center;
+}
