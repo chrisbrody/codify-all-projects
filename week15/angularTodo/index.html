@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- title -->
+	<title>Angular Task List</title>
+	<!-- font awesome icons -->
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css" rel="stylesheet">
+	<!-- custom css -->
+	<link rel="stylesheet" href="css/main.css">
+	<!-- angular js -->
+	<script src="js/angular.min.js"></script>
+	<!-- fonts -->
+	<script src="http://use.edgefonts.net/vast-shadow:n4:all.js"></script>
+    <script src="http://use.edgefonts.net/vast-shadow:n4:all;megrim.js"></script>
+</head>
+<body ng-app="taskList">
+
+	<div class="todo-wrapper" ng-controller="taskCtrl">
+      <h2>You've got <span class="emphasis">{{getTotalTodos()}}</span> things to do</h2>
+      <ul>
+        <li ng-repeat="todo in todos">
+          <input type="checkbox" ng-model="todo.done">
+          <span class="done-{{todo.done}}">{{todo.text}}</span>
+        </li>
+      </ul>
+      <form>
+        <input class="add-input" placeholder="I need to..." type="text" ng-model="formTodoText">
+        <button class="add-btn" ng-click="addTodo()"><h2>Add</h2></button>
+      </form>
+
+      <button class="clear-btn" ng-click="deleteTask()">Clear completed</button>
+    </div>
+
+
+	<script src="js/app.js"></script>
+	<script src="js/controllers/taskctrl.js"></script>
+</body>
+</html>
