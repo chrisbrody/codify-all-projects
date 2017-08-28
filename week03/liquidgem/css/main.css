@@ -1,0 +1,220 @@
+/*styling the div container that contains all the containers on the website*/
+
+#container {
+	width: 80%;
+	margin: 0 auto;
+	background-image: url(../img/gray.png);
+	background-size: cover;
+	color: rgb(86, 65, 57);
+	font-family: 'Dosis', sans-serif;
+	text-align: center;
+	/*    background-color: rgb(239, 239, 239)*/
+}
+nav {
+	height: 90px;
+}
+nav img, nav span {
+	float: left;
+}
+
+/*styling the dimond image on the nav bar*/
+
+nav img {
+	position: relative;
+	top: 30px;
+	left: 20px;
+}
+
+/*Liquid gem logo styling*/
+
+nav #logo {
+	font-family: 'Pacifico', cursive;
+	font-size: 28px;
+	font-weight: bold;
+	position: relative;
+	top: 25px;
+	left: 30px;
+}
+
+/*Navigation bae list styling*/
+
+nav ul {
+	float: right;
+	list-style-type: none;
+	margin-top: 45px;
+}
+nav li {
+	display: inline-block;
+	margin-right: 35px;
+}
+nav a {
+	text-decoration: none;
+	font-weight: bold;
+	color: rgb(86, 65, 57);
+}
+hr {
+	border: 1px solid rgb(86, 65, 57);
+	width: 95%;
+}
+
+/*Introduction sentence styling*/
+
+.intro {
+	margin-top: 60px;
+}
+.intro p:first-child {
+	letter-spacing: 1px;
+	font-size: 20px;
+	font-family: 'Dosis Bold', sans-serif;
+}
+.intro p:nth-child(2) {
+	letter-spacing: 1px;
+	font-size: 17px;
+}
+
+/*Styling "Your Name" part*/
+
+.intro span {
+	color: rgb(255, 113, 155);
+}
+
+/*styling an image in the intro div*/
+
+.intro img {
+	width: 95%;
+	border-radius: 15px;
+	margin-top: 50px;
+}
+
+/*styling "about me  and my work part*/
+
+.about {
+	display: inline-block;
+	margin-top: 30px;
+}
+.about:nth-child(2) {
+	margin-left: 40px
+}
+.about h1 {
+	font-family: 'Pacifico', cursive;
+	color: rgb(255, 113, 155);
+}
+.about p {
+	text-align: left;
+	font-size: 17px;
+}
+.text {
+	margin-bottom: 80px;
+}
+
+/*styling list with images part*/
+
+.clips ul {
+	list-style-type: none;
+	padding-left: 0;
+}
+.clips li {
+	display: inline-block;
+	border-radius: 15px;
+	background-color: whitesmoke;
+	height: 170px;
+	overflow: hidden;
+	margin: 0 10px 10px 0;
+}
+.clips li img {
+	height: 130px;
+}
+.clips a {
+	text-decoration: none;
+}
+.clips h2, .clips p {
+	text-align: left;
+	position: relative;
+	left: 5px;
+}
+.clips h2 {
+	font-size: 15px;
+	font-family: 'Dosis Bold', sans-serif;
+	top: -15px;
+	color: rgb(86, 65, 57);
+}
+.clips p {
+	font-family: 'Dosis Bold', sans-serif;
+	color: rgb(255, 113, 155);
+	font-size: 12px;
+	top: -30px;
+}
+
+/*Thank you p styling*/
+
+p#thanks {
+	font-family: 'Pacifico', cursive;
+	color: rgb(255, 113, 155);
+	font-weight: bold;
+	font-size: 20px;
+	padding-bottom: 40px;
+	margin-top: 50px;
+}
+.footer {
+	background-color: rgb(45, 45, 45);
+	height: 300px;
+}
+.footer span {
+	float: left;
+	font-family: 'Pacifico', cursive;
+	color: rgb(255, 113, 155);
+	font-weight: bold;
+	font-size: 20px;
+	position: relative;
+	top: 40px;
+	left: 15px;
+}
+.footer form {
+	float: left;
+	clear: left;
+	position: relative;
+	top: 30px;
+	left: 15px;
+}
+.footer form input:nth-child(2), .footer form input:nth-child(4) {
+	width: 450px;
+	height: 20px;
+	margin-bottom: 10px;
+	background-color: whitesmoke;
+	border-radius: 4px;
+	font-family: 'Dosis', sans-serif;
+	font-size: 13px;
+}
+.footer form input:nth-child(6) {
+	width: 450px;
+	height: 70px;
+	margin-bottom: 10px;
+	background-color: whitesmoke;
+	border-radius: 4px;
+	font-family: 'Dosis', sans-serif;
+	font-size: 13px;
+}
+.footer form input:nth-child(8) {
+	float: left;
+	background-color: rgb(45, 45, 45);
+	color: white;
+	border: none;
+	cursor: pointer;
+}
+
+/*social media icons styling*/
+
+.social {
+	float: right;
+}
+.social i {
+	color: rgb(45, 45, 45);
+	font-size: 20px;
+	background-color: rgb(255, 113, 155);
+	width: 30px;
+	height: 23px;
+	border-radius: 100%;
+	position: relative;
+	top: 110px;
+	margin-right: 15px;
+}
