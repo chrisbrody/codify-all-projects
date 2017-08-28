@@ -1,0 +1,2 @@
+// launch websnow
+$("#divSnow").websnowjq();
