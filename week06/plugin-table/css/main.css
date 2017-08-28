@@ -1,0 +1,11 @@
+/*custom css goes below here*/
+body {
+  background-color: #fafafa;
+}
+td,th {
+  padding: 2em;
+}
+.wrapper {
+  height: 100vh;
+  display: flex;
+}
