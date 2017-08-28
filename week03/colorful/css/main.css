@@ -1,0 +1,494 @@
+/*common styling for buttons*/
+.showmore {
+    font-weight: bold;
+    padding: 16px;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+}
+
+/*navigation area styling*/
+nav {
+    background-color: rgb(154, 211, 220);
+    padding: 30px 150px 10px 200px;
+    color: rgb(28, 68, 76);
+    height: 480px;
+}
+
+nav img:nth-child(1) {
+    position: relative;
+    top: 5px;
+}
+
+nav span {
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 20px;
+    position: relative;
+    top: -14px;
+}
+
+nav ul {
+    list-style-type: none;
+    float: right;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 50px;
+}
+
+nav ul li:nth-child(3) {
+    padding: 8px;
+    border-radius: 8px;
+    background-color: rgb(28, 68, 76);
+}
+
+nav ul li:nth-child(3) a {
+   color: rgb(154, 211, 220);
+}
+
+nav li a {
+    text-decoration: none;
+    color: rgb(28, 68, 76);
+    font-weight: bold;
+    font-family: Pacifico, sans-serif;
+    font-size: 14px;
+}
+
+nav h1 {
+    width: 400px;
+    color: white;
+    font-size: 45px;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-top: 140px;
+}
+
+nav img:nth-child(5) {
+    float: right;
+    position: relative;
+    top: -250px;
+    right: 120px;
+}
+
+nav img:nth-child(6) {
+    position: relative;
+    bottom: -100px;
+    left: 480px;
+}
+
+/*White section styling*/
+
+.white {
+    padding: 70px 0;
+}
+
+.white ul {
+    list-style-type: none;
+    padding:0;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    
+}
+
+/*Styling imges and content of li boxes*/
+.white img {
+    width: 150px;
+}
+
+
+.white ul li {
+    padding: 0;
+    display: inline-block;
+    text-align: center;
+    font-family: Pacifico, sans-serif;
+    font-size: 13px;
+    margin: 0 30px;
+    position: relative;
+    left: 250px;
+}
+
+/*Green area container styling*/
+.green {
+    background-color: rgb(129, 215, 166);
+    padding: 15px 180px;
+    text-align: center;
+    
+}
+
+.green h2{
+    color: white;
+    font-size: 35px;
+    letter-spacing: 2px;
+    text-align: center;
+    padding: 0;
+}
+
+.green p {
+    text-align: center;
+    position: relative;
+    top: -30px;
+    color: white;
+    font-family: Pacifico, sans-serif;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.nav2 ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+.nav2 ul li {
+    display: inline-block;
+    margin: 30px;
+}
+
+.nav2 a {
+    text-decoration: none;
+    font-family: Pacifico, sans-serif;
+    color: white;
+    font-size: 15px;
+}
+
+/*Button ALL styling*/
+
+.nav2 li:nth-child(1) a {
+    color: rgb(129, 215, 166);
+    background-color: white;
+    padding: 8px;
+    border-radius: 6px;
+}
+
+/*Button Web styling*/
+
+.nav2 li:nth-child(2) a {
+    border: 2px solid white;
+    padding: 8px;
+    border-radius: 6px;
+}
+
+.images {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.green img {
+    margin: 25px 25px;
+}
+
+.green button {
+    color: rgb(129, 215, 166);
+    background-color: white;
+    border-radius: 7px;
+    border: none;
+    margin: 40px;
+}
+
+/*Greay area styling*/
+
+.grey {
+    background-color: gainsboro;
+    padding: 60px 0;
+    height: 450px;
+}
+
+.template, .template2 {
+    width: 65%;
+    margin: 0 auto;
+    padding: 10px 10px;
+    height: 200px;
+}
+
+.template h3, .template p, .template2 h3, .template2 p {
+    display: inline-block;
+}
+
+.template .textarea {
+    width: 650px;
+    position: relative;
+    float: right;
+}
+
+.template .textarea h3 {
+    position: relative;
+    top:-10px;
+}
+
+.template .textarea p {
+    position: relative;
+    top: -25px;
+}
+
+.template button {
+    background-color: rgb(129, 215, 166);
+    color: white;
+    position: relative;
+    top: -30px;
+}
+
+/*horizontal line*/
+hr {
+    width: 65%
+}
+
+/*lower template styling*/
+
+.template2 {
+    margin-top: 40px;
+}
+
+.template2 img {
+    float: right;
+}
+
+.template2 p {
+    position: relative;
+    top: -15px;
+}
+
+.template2 button {
+    position: relative;
+    top: -20px;
+    color: white;
+    background-color: rgb(154, 211, 220);
+}
+
+/*pink section styling*/
+
+.pink {
+    background-color: rgb(230, 175, 195);
+    padding: 10px;
+    text-align: center;
+}
+
+.pink h2 {
+    color: white;
+    font-size: 35px;    
+}
+
+.pink p:nth-child(2) {
+    text-align: center;
+    position: relative;
+    top: -30px;
+    color: white;
+    font-family: Pacifico, sans-serif;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.pink ul li {
+    display: inline-block;
+    background-color: white;
+    width: 210px;
+    margin: 30px 40px;
+    height: 350px;
+}
+
+.pink img {
+    height: 180px;
+}
+
+.pink h4 {
+    font-size: 20px;
+    position: relative;
+    top: -15px;
+}
+
+.pink ul li p:nth-child(3) {
+    font-family: Pacifico, sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    position: relative;
+    top: -30px;
+}
+
+.pink ul li p:nth-child(4) {
+    font-family: Pacifico, sans-serif;
+    font-size: 12px;
+    position: relative;
+    top: -37px;
+    padding: 10px;
+}
+
+.pink i {
+    position: relative;
+    top: -55px;
+    padding: 7px 10px;
+    border-radius: 25px;
+}
+
+.fa-facebook {
+    background-color: rgb(57, 56, 166);
+    color: white;
+}
+
+.fa-twitter {
+    background-color: rgb(88, 204, 253);
+    color: white;
+}
+
+.fa-pinterest-p {
+    background-color: rgb(222, 0, 55);
+    color: white;
+}
+
+/*blue section styling*/
+
+.blue {
+    background-color: rgb(154, 211, 220);
+    padding: 10px;
+    text-align: center;
+    margin: 0;
+    height: 620px;
+}
+
+.blue h2 {
+    color: white;
+    font-size: 35px;    
+}
+
+.blue p:nth-child(2) {
+    text-align: center;
+    position: relative;
+    top: -30px;
+    color: white;
+    font-family: Pacifico, sans-serif;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.blue ul li {
+    display: inline-block;
+    background-color: white;
+    width: 210px;
+    margin: 30px 40px;
+    height: 300px;
+    margin-bottom: 0;
+}
+
+.blue img {
+    height: 180px;
+}
+
+.blue h4 {
+    font-family: Pacifico, sans-serif;
+    font-size: 15px;
+    position: relative;
+    top: -15px;
+}
+
+.blue ul li p:nth-child(3) {
+    font-family: Pacifico, sans-serif;
+    font-size: 12px;
+    position: relative;
+    top: -30px;
+    font-style: italic;
+}
+
+.blue ul li p:nth-child(4) {
+    font-family: Pacifico, sans-serif;
+    font-size: 12px;
+    position: relative;
+    top: -37px;
+    padding: 10px;
+}
+
+.blue i {
+    position: relative;
+    top: -55px;
+    padding: 7px 10px;
+    border-radius: 25px;
+}
+
+.blue button {
+    background-color: white;
+    color: rgb(154, 211, 220);
+    position: relative;
+    top: 10px;
+}
+
+/*footer area styling*/
+
+footer {
+    background-color: rgb(59, 59, 59);
+    margin: 0;
+    height: 600px;
+    position: relative;
+    top: -30px;
+    padding: 20px 180px;
+}
+
+footer h2 {
+    color: white;
+    font-size: 35px;
+    text-align: center;
+}
+
+footer p:nth-child(2) {
+     text-align: center;
+    position: relative;
+    top: -20px;
+    color: white;
+    font-family: Pacifico, sans-serif;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+form {
+    text-align: center;
+    }
+
+input { 
+    width: 400px;
+    height: 35px;
+    border-radius: 7px;
+    color: grey;
+}
+
+form input:nth-child(7) {
+    height: 135px;
+}
+
+footer .showmore {
+    width: 100px;
+    height: 45px;
+    background-color: white;
+    margin-top: 20px;
+    margin-bottom: 30px;
+} 
+
+footer hr {
+    border: 1px solid black;
+    width: 85%;
+}
+
+footer i {
+    border-radius: 10px;
+    width: 25px;
+    height: 20px;
+    text-align: center;
+    margin-right: 5px;
+    margin-top: 25px;
+    position: relative;
+    left: 80px;
+}
+
+footer .fa {
+    background-color: rgb(80, 80, 80);
+    color: rgb(58, 58, 58);
+}
+
+footer p:nth-child(9) {
+    float: right;
+    color: rgb(171, 156, 126);
+    position: relative;
+    right: 80px;
+}
+
+footer span {
+    color: rgb(136, 136, 136);
+}
