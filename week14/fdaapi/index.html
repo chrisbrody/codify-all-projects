@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<!-- Character Set -->
+	<meta charset="utf-8">
+	<!-- Media Queries -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Title -->
+	<title>Federal Drug Administration Api</title>
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Poiret+One" rel="stylesheet">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+	<nav>
+		<img src="img/fda.gif">
+	</nav>
+
+	<div id='wrapper'>
+  	<h1 id='title'>DRUG SEARCH</h1>
+
+		<p class="lead">Enter a drug to find the most common side effects</p>
+
+ 		<input id="term" type="text" placeholder="Name of drug" autofocus>
+
+		<br>
+
+  	<button id="searchBtn" class="btn btn-default">Search</button>
+
+  	<div id='results'></div>
+	</div>
+
+	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!-- Custom JS -->
+	<script src="js/main.js"></script>
+</body>
+
+</html>
