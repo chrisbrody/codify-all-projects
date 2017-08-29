@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JavaScript Exercises #9</title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <!-- #6 Update the body tag so it has an ng-app directive -->
+  <body ng-app="myApp">
+
+    <h1>JavaScript Exercises</h1>
+    <ol>
+      <li>Create a copy of your template folder rename it to angulartemplate.</li>
+      <li>In your js folder, create a new folder named 'controllers'.</li>
+      <li>Go to this <a href="http://codifyacademy.com/wk15/angularjs.org" target="_blank">site</a>. Click 'DOWNLOAD ANGULARJS', select the version that has (latest) in its name, and then select 'zip', and then hit download.</li>
+      <li>Open the zip file and find the file named 'angular.js'. Copy it and paste it into the js folder of your new angulartemplate.</li>
+      <li>In HTML: Add 'angular.js' to your template using a new script tag. This should go in the &lt;head&gt;.</li>
+      <li>In HTML: Update the html tag so it has an ng-app attribute - this is known as an Angular directive.</li>
+      <li>Create a copy of your new angulartemplate folder and rename it to week15exercise.</li>
+      <li>Drag this new folder into your 'week15' folder inside your 'codify' folder.</li>
+      <li>When working through these exercises, there are bits and pieces of the instructions that are deliberately left out. You should start thinking about what you THINK you will need in order to accomplish the request.</li>
+      <li>In JS: In your app.js file, create an Angular app module. Store this module in a variable. Make sure to also update your ng-app directive in HTML with the name of your Angular application - remember, that the variable and the application name are NOT the same thing (though they can be the same word(s))
+      <li>In JS: On a new line, using the variable that your stored your app module in, create a controller.
+      <li>In JS: Add a string of data to the controller's $scope with the text: "This is an expression".
+      <li>In HTML: Create a div and an h1 element. Give the div the ng-controller attribute and make its value equal to the name of your controller.
+      <li>In JS: Using an Angular expression (the {}), display the text "This is an expression" in your h1.
+      <li>In HTML: Create two inputs tags for the user to give us 2 numbers, and a div to display the resulting output.
+      <li>In HTML: Using two-way data binding, make it so when the user updates the values in the input elements the information in the div also updates. The output should be the two numbers multipled by each other.
+      <li>In HTML: Add an Angular filter to the expression to change how the data is displayed.
+      <li>In JS: Create an array of objects and store it using $scope.
+      <li>In HTML: Using the ng-repeat directive, display all of the items from the array in separate HTML elements.</li>
+    </ol>
+
+    <!-- #13 Create a div and an h1 element. Give the div the ng-controller attribute -->
+    <div ng-controller="myCtrl">
+      <!-- #14 Using an Angular expression, display the text "This is an expression"  -->
+      <h1>{{express}}</h1>
+    </h1>
+
+    <!-- #15 Create two inputs tags for the user to give us 2 numbers, and a div to display a calculation we create. -->
+    <input type="number" placeholder="Chose a Number" ng-model="num1">
+    <input type="number" placeholder="Chose a Number" ng-model="num2">
+    <div>
+      <!-- #16 Using two-way data binding, make it so when the user updates the values in the input elements the information in the div also updates. The output should be the two numbers multipled by each other. -->
+      Number 12: {{ num1 * num2 }}
+      <!-- #17 Add any angular filter to the expression to change how the data is displayed. -->
+      Number 13: {{ num1 * num2 | currency }}
+    </div>
+
+    <!-- #19 Use the ng-repeat directive to display items from an array in separate HTML elements. -->
+    <ul ng-controller="myCtrl">
+      <li ng-repeat="user in users">
+        {{"User Name: " + user.username + " User Email: " + user.useremail}}
+      </li>
+    </ul>
+	  <!-- #5 Downloaded angularJS 1, include it in the js folder and add it using a script tag. -->
+	  <script src="js/angular.min.js"></script>
+    <!-- #5 Rename the main.js file to app.js and create a folder called controllers inside the JS folder. -->
+    <script src="js/app.js"></script>
+    <!-- #8 Set up an Angular app module and add a controller to that module. -->
+    <script src="js/controllers/myCtrl.js"></script>
+  </body>
+</html>
