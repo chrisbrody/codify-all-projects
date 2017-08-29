@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Character Set -->
+	<meta charset="utf-8">
+	<!-- Media Queries -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Title -->
+	<title>Email Form Validation - Checking email with JavaScript</title>
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6 col-sm-offset-3 col-md-8 col-md-offset-2 col-lg-10 col-lg-offset-1">
+	    		<h1>Input an email and submit to validate</h1>
+					<form>
+					  	<div class="form-group">
+					    	<label for="useremail">Email address</label>
+					    	<input type="email" class="form-control" id="useremail">
+					    </div>
+					    <div class="form-group">
+					    	<button id="validateBtn" class="btn btn-primary" type="button">Validate Email</button>
+					    </div>
+					    <!-- results -->
+					    <div class="form-group">
+							<div id="results"></div>
+						</div>
+					</form>
+	    	</div>
+		</div>
+    </div>
+
+	<script src="js/main.js"></script>
+</body>
+</html>
